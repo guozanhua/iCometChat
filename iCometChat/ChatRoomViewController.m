@@ -7,9 +7,10 @@
 //
 
 #import "ChatRoomViewController.h"
-
+#import "ChatRoom.h"
 
 @implementation ChatRoomViewController
+@synthesize room;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -20,17 +21,29 @@
     return self;
 }
 
+- (void)loadView {
+    UITableView *table = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
+	table.autoresizingMask = (UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight);
+	table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+	table.delegate = self;
+	table.dataSource = self;	
+	table.sectionIndexMinimumDisplayRowCount=10;
+    self.tableView = table;
+	[table release];
+    
+    self.room = [ChatRoom room];
+}
+
 - (void)dealloc
 {
+    [room release];
     [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    
-    // Release any cached data, images, etc that aren't in use.
+    self.room = nil;
 }
 
 #pragma mark - View lifecycle
@@ -38,12 +51,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [room bind:^{
+        [self.tableView reloadData];
+        [self.tableView scrollToRowAtIndexPath:[room indexPathAtLast] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    }];
 }
 
 - (void)viewDidUnload
@@ -83,16 +94,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [room countMessages];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -104,8 +111,7 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    // Configure the cell...
-    
+    cell.textLabel.text = [room message:indexPath.row];
     return cell;
 }
 

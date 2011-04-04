@@ -10,7 +10,8 @@
 
 
 @interface ChatPort : NSObject {
-    
+    void (^resultCallBack)(NSString *message);
 }
-
++ (ChatPort *) port;
+- (void)bindServerNotification:(void (^)(NSString *message))resultCallBack;
 @end

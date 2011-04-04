@@ -10,5 +10,33 @@
 
 
 @implementation ChatPort
+static NSString *url = @"http://localhost:8080/async/stockticker";
 
++ (ChatPort *) port {
+    return [[[ChatPort alloc] init] autorelease];
+}
+
+- (void)dealloc {
+    Block_release(resultCallBack);
+    [super dealloc];
+}
+
+- (void)bindServerNotification:(void (^)(NSString *message))aResultCallBack {
+    resultCallBack = Block_copy(aResultCallBack);
+    NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
+    [[NSURLConnection alloc] initWithRequest:request delegate:self];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+    NSString *message = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
+    resultCallBack(message);
+    [message release];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+	[connection release];
+}
 @end

@@ -7,7 +7,7 @@
 //
 
 #import "iCometChatAppDelegate.h"
-
+#import "ChatRoomViewController.h"
 @implementation iCometChatAppDelegate
 
 
@@ -16,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    ChatRoomViewController *controller = [[ChatRoomViewController alloc] init];
+    
+    [self.window addSubview:controller.view];
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -20,6 +20,9 @@
 		788CE0A21349BEDD00DBE3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 788CE0A01349BEDD00DBE3C1 /* InfoPlist.strings */; };
 		788CE0A51349BEDD00DBE3C1 /* iCometChatTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 788CE0A41349BEDD00DBE3C1 /* iCometChatTests.h */; };
 		788CE0A71349BEDD00DBE3C1 /* iCometChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0A61349BEDD00DBE3C1 /* iCometChatTests.m */; };
+		788CE0B21349BF1700DBE3C1 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0B11349BF1700DBE3C1 /* ChatRoomViewController.m */; };
+		788CE0BB1349C08900DBE3C1 /* ChatPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0BA1349C08900DBE3C1 /* ChatPort.m */; };
+		788CE0CC1349DCE400DBE3C1 /* ChatRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0CB1349DCE400DBE3C1 /* ChatRoom.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,19 +40,25 @@
 		788CE07D1349BEDD00DBE3C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		788CE07F1349BEDD00DBE3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		788CE0811349BEDD00DBE3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		788CE0851349BEDD00DBE3C1 /* iCometChat-Info.plist */ = {isa = PBXFileReference; path = "iCometChat-Info.plist"; sourceTree = "<group>"; };
+		788CE0851349BEDD00DBE3C1 /* iCometChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCometChat-Info.plist"; sourceTree = "<group>"; };
 		788CE0871349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		788CE0891349BEDD00DBE3C1 /* iCometChat-Prefix.pch */ = {isa = PBXFileReference; path = "iCometChat-Prefix.pch"; sourceTree = "<group>"; };
+		788CE0891349BEDD00DBE3C1 /* iCometChat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCometChat-Prefix.pch"; sourceTree = "<group>"; };
 		788CE08A1349BEDD00DBE3C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		788CE08C1349BEDD00DBE3C1 /* iCometChatAppDelegate.h */ = {isa = PBXFileReference; path = iCometChatAppDelegate.h; sourceTree = "<group>"; };
+		788CE08C1349BEDD00DBE3C1 /* iCometChatAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCometChatAppDelegate.h; sourceTree = "<group>"; };
 		788CE08D1349BEDD00DBE3C1 /* iCometChatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCometChatAppDelegate.m; sourceTree = "<group>"; };
 		788CE0901349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
 		788CE0971349BEDD00DBE3C1 /* iCometChatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCometChatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		788CE09F1349BEDD00DBE3C1 /* iCometChatTests-Info.plist */ = {isa = PBXFileReference; path = "iCometChatTests-Info.plist"; sourceTree = "<group>"; };
+		788CE09F1349BEDD00DBE3C1 /* iCometChatTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCometChatTests-Info.plist"; sourceTree = "<group>"; };
 		788CE0A11349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		788CE0A31349BEDD00DBE3C1 /* iCometChatTests-Prefix.pch */ = {isa = PBXFileReference; path = "iCometChatTests-Prefix.pch"; sourceTree = "<group>"; };
+		788CE0A31349BEDD00DBE3C1 /* iCometChatTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iCometChatTests-Prefix.pch"; sourceTree = "<group>"; };
 		788CE0A41349BEDD00DBE3C1 /* iCometChatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCometChatTests.h; sourceTree = "<group>"; };
 		788CE0A61349BEDD00DBE3C1 /* iCometChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCometChatTests.m; sourceTree = "<group>"; };
+		788CE0B01349BF1700DBE3C1 /* ChatRoomViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoomViewController.h; sourceTree = "<group>"; };
+		788CE0B11349BF1700DBE3C1 /* ChatRoomViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoomViewController.m; sourceTree = "<group>"; };
+		788CE0B91349C08900DBE3C1 /* ChatPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatPort.h; sourceTree = "<group>"; };
+		788CE0BA1349C08900DBE3C1 /* ChatPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPort.m; sourceTree = "<group>"; };
+		788CE0CA1349DCE400DBE3C1 /* ChatRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoom.h; sourceTree = "<group>"; };
+		788CE0CB1349DCE400DBE3C1 /* ChatRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoom.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +117,8 @@
 		788CE0831349BEDD00DBE3C1 /* iCometChat */ = {
 			isa = PBXGroup;
 			children = (
+				788CE0C91349DCB900DBE3C1 /* Chat */,
+				788CE0C81349DC9300DBE3C1 /* View */,
 				788CE08C1349BEDD00DBE3C1 /* iCometChatAppDelegate.h */,
 				788CE08D1349BEDD00DBE3C1 /* iCometChatAppDelegate.m */,
 				788CE08F1349BEDD00DBE3C1 /* MainWindow.xib */,
@@ -145,6 +156,26 @@
 				788CE0A31349BEDD00DBE3C1 /* iCometChatTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		788CE0C81349DC9300DBE3C1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				788CE0B01349BF1700DBE3C1 /* ChatRoomViewController.h */,
+				788CE0B11349BF1700DBE3C1 /* ChatRoomViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		788CE0C91349DCB900DBE3C1 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				788CE0B91349C08900DBE3C1 /* ChatPort.h */,
+				788CE0BA1349C08900DBE3C1 /* ChatPort.m */,
+				788CE0CA1349DCE400DBE3C1 /* ChatRoom.h */,
+				788CE0CB1349DCE400DBE3C1 /* ChatRoom.m */,
+			);
+			name = Chat;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +284,9 @@
 			files = (
 				788CE08B1349BEDD00DBE3C1 /* main.m in Sources */,
 				788CE08E1349BEDD00DBE3C1 /* iCometChatAppDelegate.m in Sources */,
+				788CE0B21349BF1700DBE3C1 /* ChatRoomViewController.m in Sources */,
+				788CE0BB1349C08900DBE3C1 /* ChatPort.m in Sources */,
+				788CE0CC1349DCE400DBE3C1 /* ChatRoom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

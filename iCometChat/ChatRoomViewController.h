@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-
+@class ChatRoom;
 @interface ChatRoomViewController : UITableViewController {
-    
+    ChatRoom *room;
 }
-
+@property (nonatomic, retain)ChatRoom *room;
 @end
