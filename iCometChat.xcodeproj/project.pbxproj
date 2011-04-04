@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		788CE07E1349BEDD00DBE3C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE07D1349BEDD00DBE3C1 /* UIKit.framework */; };
+		788CE0801349BEDD00DBE3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE07F1349BEDD00DBE3C1 /* Foundation.framework */; };
+		788CE0821349BEDD00DBE3C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE0811349BEDD00DBE3C1 /* CoreGraphics.framework */; };
+		788CE0881349BEDD00DBE3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 788CE0861349BEDD00DBE3C1 /* InfoPlist.strings */; };
+		788CE08B1349BEDD00DBE3C1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE08A1349BEDD00DBE3C1 /* main.m */; };
+		788CE08E1349BEDD00DBE3C1 /* iCometChatAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE08D1349BEDD00DBE3C1 /* iCometChatAppDelegate.m */; };
+		788CE0911349BEDD00DBE3C1 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788CE08F1349BEDD00DBE3C1 /* MainWindow.xib */; };
+		788CE0981349BEDD00DBE3C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE07D1349BEDD00DBE3C1 /* UIKit.framework */; };
+		788CE0991349BEDD00DBE3C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE07F1349BEDD00DBE3C1 /* Foundation.framework */; };
+		788CE09A1349BEDD00DBE3C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788CE0811349BEDD00DBE3C1 /* CoreGraphics.framework */; };
+		788CE0A21349BEDD00DBE3C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 788CE0A01349BEDD00DBE3C1 /* InfoPlist.strings */; };
+		788CE0A51349BEDD00DBE3C1 /* iCometChatTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 788CE0A41349BEDD00DBE3C1 /* iCometChatTests.h */; };
+		788CE0A71349BEDD00DBE3C1 /* iCometChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0A61349BEDD00DBE3C1 /* iCometChatTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		788CE09B1349BEDD00DBE3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 788CE0701349BEDD00DBE3C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 788CE0781349BEDD00DBE3C1;
+			remoteInfo = iCometChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		788CE0791349BEDD00DBE3C1 /* iCometChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCometChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		788CE07D1349BEDD00DBE3C1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		788CE07F1349BEDD00DBE3C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		788CE0811349BEDD00DBE3C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		788CE0851349BEDD00DBE3C1 /* iCometChat-Info.plist */ = {isa = PBXFileReference; path = "iCometChat-Info.plist"; sourceTree = "<group>"; };
+		788CE0871349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		788CE0891349BEDD00DBE3C1 /* iCometChat-Prefix.pch */ = {isa = PBXFileReference; path = "iCometChat-Prefix.pch"; sourceTree = "<group>"; };
+		788CE08A1349BEDD00DBE3C1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		788CE08C1349BEDD00DBE3C1 /* iCometChatAppDelegate.h */ = {isa = PBXFileReference; path = iCometChatAppDelegate.h; sourceTree = "<group>"; };
+		788CE08D1349BEDD00DBE3C1 /* iCometChatAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCometChatAppDelegate.m; sourceTree = "<group>"; };
+		788CE0901349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		788CE0971349BEDD00DBE3C1 /* iCometChatTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCometChatTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		788CE09F1349BEDD00DBE3C1 /* iCometChatTests-Info.plist */ = {isa = PBXFileReference; path = "iCometChatTests-Info.plist"; sourceTree = "<group>"; };
+		788CE0A11349BEDD00DBE3C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		788CE0A31349BEDD00DBE3C1 /* iCometChatTests-Prefix.pch */ = {isa = PBXFileReference; path = "iCometChatTests-Prefix.pch"; sourceTree = "<group>"; };
+		788CE0A41349BEDD00DBE3C1 /* iCometChatTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCometChatTests.h; sourceTree = "<group>"; };
+		788CE0A61349BEDD00DBE3C1 /* iCometChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iCometChatTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		788CE0761349BEDD00DBE3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE07E1349BEDD00DBE3C1 /* UIKit.framework in Frameworks */,
+				788CE0801349BEDD00DBE3C1 /* Foundation.framework in Frameworks */,
+				788CE0821349BEDD00DBE3C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788CE0931349BEDD00DBE3C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE0981349BEDD00DBE3C1 /* UIKit.framework in Frameworks */,
+				788CE0991349BEDD00DBE3C1 /* Foundation.framework in Frameworks */,
+				788CE09A1349BEDD00DBE3C1 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		788CE06E1349BEDD00DBE3C1 = {
+			isa = PBXGroup;
+			children = (
+				788CE0831349BEDD00DBE3C1 /* iCometChat */,
+				788CE09D1349BEDD00DBE3C1 /* iCometChatTests */,
+				788CE07C1349BEDD00DBE3C1 /* Frameworks */,
+				788CE07A1349BEDD00DBE3C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		788CE07A1349BEDD00DBE3C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				788CE0791349BEDD00DBE3C1 /* iCometChat.app */,
+				788CE0971349BEDD00DBE3C1 /* iCometChatTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		788CE07C1349BEDD00DBE3C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				788CE07D1349BEDD00DBE3C1 /* UIKit.framework */,
+				788CE07F1349BEDD00DBE3C1 /* Foundation.framework */,
+				788CE0811349BEDD00DBE3C1 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		788CE0831349BEDD00DBE3C1 /* iCometChat */ = {
+			isa = PBXGroup;
+			children = (
+				788CE08C1349BEDD00DBE3C1 /* iCometChatAppDelegate.h */,
+				788CE08D1349BEDD00DBE3C1 /* iCometChatAppDelegate.m */,
+				788CE08F1349BEDD00DBE3C1 /* MainWindow.xib */,
+				788CE0841349BEDD00DBE3C1 /* Supporting Files */,
+			);
+			path = iCometChat;
+			sourceTree = "<group>";
+		};
+		788CE0841349BEDD00DBE3C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				788CE0851349BEDD00DBE3C1 /* iCometChat-Info.plist */,
+				788CE0861349BEDD00DBE3C1 /* InfoPlist.strings */,
+				788CE0891349BEDD00DBE3C1 /* iCometChat-Prefix.pch */,
+				788CE08A1349BEDD00DBE3C1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		788CE09D1349BEDD00DBE3C1 /* iCometChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				788CE0A41349BEDD00DBE3C1 /* iCometChatTests.h */,
+				788CE0A61349BEDD00DBE3C1 /* iCometChatTests.m */,
+				788CE09E1349BEDD00DBE3C1 /* Supporting Files */,
+			);
+			path = iCometChatTests;
+			sourceTree = "<group>";
+		};
+		788CE09E1349BEDD00DBE3C1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				788CE09F1349BEDD00DBE3C1 /* iCometChatTests-Info.plist */,
+				788CE0A01349BEDD00DBE3C1 /* InfoPlist.strings */,
+				788CE0A31349BEDD00DBE3C1 /* iCometChatTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		788CE0781349BEDD00DBE3C1 /* iCometChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788CE0AA1349BEDD00DBE3C1 /* Build configuration list for PBXNativeTarget "iCometChat" */;
+			buildPhases = (
+				788CE0751349BEDD00DBE3C1 /* Sources */,
+				788CE0761349BEDD00DBE3C1 /* Frameworks */,
+				788CE0771349BEDD00DBE3C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCometChat;
+			productName = iCometChat;
+			productReference = 788CE0791349BEDD00DBE3C1 /* iCometChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		788CE0961349BEDD00DBE3C1 /* iCometChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 788CE0AD1349BEDD00DBE3C1 /* Build configuration list for PBXNativeTarget "iCometChatTests" */;
+			buildPhases = (
+				788CE0921349BEDD00DBE3C1 /* Sources */,
+				788CE0931349BEDD00DBE3C1 /* Frameworks */,
+				788CE0941349BEDD00DBE3C1 /* Resources */,
+				788CE0951349BEDD00DBE3C1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				788CE09C1349BEDD00DBE3C1 /* PBXTargetDependency */,
+			);
+			name = iCometChatTests;
+			productName = iCometChatTests;
+			productReference = 788CE0971349BEDD00DBE3C1 /* iCometChatTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		788CE0701349BEDD00DBE3C1 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 788CE0731349BEDD00DBE3C1 /* Build configuration list for PBXProject "iCometChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 788CE06E1349BEDD00DBE3C1;
+			productRefGroup = 788CE07A1349BEDD00DBE3C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				788CE0781349BEDD00DBE3C1 /* iCometChat */,
+				788CE0961349BEDD00DBE3C1 /* iCometChatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		788CE0771349BEDD00DBE3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE0881349BEDD00DBE3C1 /* InfoPlist.strings in Resources */,
+				788CE0911349BEDD00DBE3C1 /* MainWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788CE0941349BEDD00DBE3C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE0A21349BEDD00DBE3C1 /* InfoPlist.strings in Resources */,
+				788CE0A51349BEDD00DBE3C1 /* iCometChatTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		788CE0951349BEDD00DBE3C1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		788CE0751349BEDD00DBE3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE08B1349BEDD00DBE3C1 /* main.m in Sources */,
+				788CE08E1349BEDD00DBE3C1 /* iCometChatAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		788CE0921349BEDD00DBE3C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				788CE0A71349BEDD00DBE3C1 /* iCometChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		788CE09C1349BEDD00DBE3C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 788CE0781349BEDD00DBE3C1 /* iCometChat */;
+			targetProxy = 788CE09B1349BEDD00DBE3C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		788CE0861349BEDD00DBE3C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788CE0871349BEDD00DBE3C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		788CE08F1349BEDD00DBE3C1 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788CE0901349BEDD00DBE3C1 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		788CE0A01349BEDD00DBE3C1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				788CE0A11349BEDD00DBE3C1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		788CE0A81349BEDD00DBE3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		788CE0A91349BEDD00DBE3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		788CE0AB1349BEDD00DBE3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCometChat/iCometChat-Prefix.pch";
+				INFOPLIST_FILE = "iCometChat/iCometChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		788CE0AC1349BEDD00DBE3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCometChat/iCometChat-Prefix.pch";
+				INFOPLIST_FILE = "iCometChat/iCometChat-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		788CE0AE1349BEDD00DBE3C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCometChat.app/iCometChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCometChatTests/iCometChatTests-Prefix.pch";
+				INFOPLIST_FILE = "iCometChatTests/iCometChatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		788CE0AF1349BEDD00DBE3C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iCometChat.app/iCometChat";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iCometChatTests/iCometChatTests-Prefix.pch";
+				INFOPLIST_FILE = "iCometChatTests/iCometChatTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		788CE0731349BEDD00DBE3C1 /* Build configuration list for PBXProject "iCometChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788CE0A81349BEDD00DBE3C1 /* Debug */,
+				788CE0A91349BEDD00DBE3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		788CE0AA1349BEDD00DBE3C1 /* Build configuration list for PBXNativeTarget "iCometChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788CE0AB1349BEDD00DBE3C1 /* Debug */,
+				788CE0AC1349BEDD00DBE3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		788CE0AD1349BEDD00DBE3C1 /* Build configuration list for PBXNativeTarget "iCometChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				788CE0AE1349BEDD00DBE3C1 /* Debug */,
+				788CE0AF1349BEDD00DBE3C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 788CE0701349BEDD00DBE3C1 /* Project object */;
+}

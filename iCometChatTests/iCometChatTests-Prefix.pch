@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'iCometChatTests' target in the 'iCometChatTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
