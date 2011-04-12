@@ -1,16 +1,15 @@
 //
-//  ChatRoomViewController.m
+//  TestViewcontroller.m
 //  iCometChat
 //
-//  Created by Yongseok Kang on 4/4/11.
+//  Created by Yongseok Kang on 4/8/11.
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-#import "ChatRoomViewController.h"
-#import "ChatRoom.h"
+#import "TestViewcontroller.h"
 
-@implementation ChatRoomViewController
-@synthesize room;
+
+@implementation TestViewcontroller
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -21,58 +20,35 @@
     return self;
 }
 
-- (void)loadView {
-    NSLog(@"add loadView");
-    UITableView *table = [[UITableView alloc] initWithFrame:[UIScreen mainScreen].applicationFrame];
-	table.autoresizingMask = (UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight);
-	table.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
-	table.delegate = self;
-	table.dataSource = self;	
-	table.sectionIndexMinimumDisplayRowCount=10;
-    self.tableView = table;
-	[table release];
-    
-    self.room = [ChatRoom room];
-}
-
 - (void)dealloc
 {
-    [room release];
     [super dealloc];
 }
 
 - (void)didReceiveMemoryWarning
 {
-    NSLog(@"before super didReceiveMemoryWarnig");
-    NSLog(@"%@", self.view);
+    // Releases the view if it doesn't have a superview.
     [super didReceiveMemoryWarning];
-    NSLog(@"after super didReceiveMemoryWarning");
-    NSLog(@"%@", self.view);
-    self.room = nil;
+    
+    // Release any cached data, images, etc that aren't in use.
 }
 
 #pragma mark - View lifecycle
 
 - (void)viewDidLoad
 {
-    NSLog(@"before super viewDidLoad");
-    NSLog(@"%@", self.view);
     [super viewDidLoad];
-    NSLog(@"after super viewDidLoad");
-    NSLog(@"%@", self.view);
-    [room bind:^{
-        [self.tableView reloadData];
-        [self.tableView scrollToRowAtIndexPath:[room indexPathAtLast] atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-    }];
+
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+ 
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)viewDidUnload
 {
-    NSLog(@"before super viewDidUnLoad");
-    NSLog(@"%@", self.view);
     [super viewDidUnload];
-    NSLog(@"before super viewDidUnLoad");
-    NSLog(@"%@", self.view);
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
 }
@@ -107,12 +83,16 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 1;
+#warning Potentially incomplete method implementation.
+    // Return the number of sections.
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [room countMessages];
+#warning Incomplete method implementation.
+    // Return the number of rows in the section.
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -124,7 +104,8 @@
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     }
     
-    cell.textLabel.text = [room message:indexPath.row];
+    // Configure the cell...
+    
     return cell;
 }
 

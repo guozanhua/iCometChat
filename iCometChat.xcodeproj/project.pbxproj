@@ -23,6 +23,7 @@
 		788CE0B21349BF1700DBE3C1 /* ChatRoomViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0B11349BF1700DBE3C1 /* ChatRoomViewController.m */; };
 		788CE0BB1349C08900DBE3C1 /* ChatPort.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0BA1349C08900DBE3C1 /* ChatPort.m */; };
 		788CE0CC1349DCE400DBE3C1 /* ChatRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 788CE0CB1349DCE400DBE3C1 /* ChatRoom.m */; };
+		78D70300134EB32600346A25 /* TestViewcontroller.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D702FF134EB32600346A25 /* TestViewcontroller.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,8 @@
 		788CE0BA1349C08900DBE3C1 /* ChatPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatPort.m; sourceTree = "<group>"; };
 		788CE0CA1349DCE400DBE3C1 /* ChatRoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatRoom.h; sourceTree = "<group>"; };
 		788CE0CB1349DCE400DBE3C1 /* ChatRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatRoom.m; sourceTree = "<group>"; };
+		78D702FE134EB32600346A25 /* TestViewcontroller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewcontroller.h; sourceTree = "<group>"; };
+		78D702FF134EB32600346A25 /* TestViewcontroller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewcontroller.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +166,8 @@
 			children = (
 				788CE0B01349BF1700DBE3C1 /* ChatRoomViewController.h */,
 				788CE0B11349BF1700DBE3C1 /* ChatRoomViewController.m */,
+				78D702FE134EB32600346A25 /* TestViewcontroller.h */,
+				78D702FF134EB32600346A25 /* TestViewcontroller.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -287,6 +292,7 @@
 				788CE0B21349BF1700DBE3C1 /* ChatRoomViewController.m in Sources */,
 				788CE0BB1349C08900DBE3C1 /* ChatPort.m in Sources */,
 				788CE0CC1349DCE400DBE3C1 /* ChatRoom.m in Sources */,
+				78D70300134EB32600346A25 /* TestViewcontroller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +465,7 @@
 				788CE0AC1349BEDD00DBE3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		788CE0AD1349BEDD00DBE3C1 /* Build configuration list for PBXNativeTarget "iCometChatTests" */ = {
 			isa = XCConfigurationList;
@@ -467,6 +474,7 @@
 				788CE0AF1349BEDD00DBE3C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

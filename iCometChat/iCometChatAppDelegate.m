@@ -16,9 +16,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    NSLog(@"before created controller");
     ChatRoomViewController *controller = [[ChatRoomViewController alloc] init];
+    NSLog(@"after created controller");
     
+    NSLog(@"before addSubview");
     [self.window addSubview:controller.view];
+    NSLog(@"after addSubview");
     [self.window makeKeyAndVisible];
     return YES;
 }

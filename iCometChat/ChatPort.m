@@ -10,7 +10,7 @@
 
 
 @implementation ChatPort
-static NSString *url = @"http://localhost:8080/async/stockticker";
+static NSString *url = @"http://localhost:8080/serverMesssageNotifier?id=feelform@gmail.com&roomNumber=1&device=mobile";
 
 + (ChatPort *) port {
     return [[[ChatPort alloc] init] autorelease];
